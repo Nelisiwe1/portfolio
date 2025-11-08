@@ -1,0 +1,148 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-title {
+  position: relative;
+  text-align: center;
+}
+
+.about-title h1 {
+  font-size: clamp(36px, 6vw, 80px);
+  font-weight: 600;
+  z-index: 2;
+  position: relative;
+}
+
+/* .about-title img {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  z-index: -1;
+  max-width: 150px;
+  opacity: 0.3;
+} */
+
+/* Layout Section */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 60px;
+  justify-content: center;
+}
+
+/* Left Image */
+.about-left img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 0 25px rgba(180, 21, 255, 0.4);
+}
+
+/* Right Content */
+.about-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  min-width: 280px;
+}
+
+/* Paragraphs */
+.about-para {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: clamp(16px, 2vw, 22px);
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+/* Skills Section */
+.about-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-skill {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  transition: transform 0.3s ease;
+}
+
+.about-skill p {
+  min-width: 120px;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 600;
+}
+
+.about-skill hr {
+  flex: 1;
+  height: 8px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #df8908, #b415ff);
+}
+
+.about-skill:hover {
+  transform: scale(1.05);
+}
+
+/* Achievements */
+.about-achievements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.about-achievement {
+  text-align: center;
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 500;
+}
+
+.about-achievement h1 {
+  font-size: clamp(32px, 6vw, 60px);
+  background: linear-gradient(270deg, #df8908 50%, #b415ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-left img {
+    max-width: 250px;
+  }
+
+  .about-skills {
+    align-items: center;
+  }
+
+  .about-skill {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-skill hr {
+    width: 80%;
+  }
+}
