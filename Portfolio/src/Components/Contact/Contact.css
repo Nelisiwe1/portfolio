@@ -1,23 +1,23 @@
 .contact {
-  background-color: #0a0a0a;
-  color: #fff;
+  background-color: var(--background-color);
+  color: var(--text-color);
   padding: 80px 20px;
   text-align: center;
+  transition: all 0.3s ease;
 }
 
 .contact-title h1 {
   font-size: clamp(36px, 6vw, 80px);
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 50px;
-}
-
-.contact-title h1 span {
-  background: linear-gradient(267deg, #df8908 0%, #b415ff 100%);
+  background: var(--accent-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  
 }
 
+/* Contact Layout */
 .contact-container {
   display: flex;
   flex-wrap: wrap;
@@ -40,6 +40,7 @@
 .contact-info h3 {
   font-size: 1.6rem;
   margin-bottom: 10px;
+  color: var(--primary-color);
 }
 
 .contact-info p {
@@ -51,10 +52,11 @@
 }
 
 .icon {
-  color: #df8908;
-  font-size: 1.2rem;
+  color: var(--secondary-color);
+  font-size: 1.3rem;
 }
 
+/* Social Links */
 .social-links {
   display: flex;
   gap: 15px;
@@ -65,16 +67,15 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  color: #fff;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s ease;
 }
 
 .social-links a:hover {
-  background: linear-gradient(267deg, #df8908 0%, #b415ff 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: var(--secondary-color);
+  transform: translateY(-2px);
 }
 
 /* Contact Form */
@@ -91,24 +92,27 @@
   padding: 15px 20px;
   border-radius: 10px;
   border: 1px solid #333;
-  background-color: #111;
-  color: #fff;
+  background-color: var(--input-bg);
+  color: var(--text-color);
   font-size: 1rem;
   resize: none;
   width: 100%;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: #b415ff;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 8px rgba(74, 222, 128, 0.4);
 }
 
+/* Button */
 .contact-form button {
   padding: 15px 30px;
   border-radius: 50px;
   border: none;
-  background: linear-gradient(267deg, #df8908 0%, #b415ff 100%);
+  background: var(--accent-gradient);
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
@@ -118,6 +122,7 @@
 
 .contact-form button:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(74, 222, 128, 0.4);
 }
 
 /* Responsive */
@@ -125,9 +130,8 @@
   .contact-container {
     flex-direction: column;
     gap: 30px;
+    padding: 30px;
   }
 
-  .contact-info {
-    text-align: center;
-  }
+
 }

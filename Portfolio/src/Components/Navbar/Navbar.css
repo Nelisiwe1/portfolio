@@ -1,27 +1,58 @@
-.navbar{
-display: flex;
-align-items:center;
-justify-content:space-between;
-margin: 20px 170px;
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 170px;
+  background-color: #0a0a0a; /* keep dark background */
+  padding: 0 20px;
 }
-.nav-menu{
-display: flex;
-align-items: center;
-list-style: none;
-gap: 60px;
-font-size: 20px;
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+  color: #fff; /* white text for menu items */
 }
-.nav-connect{
-    padding: 20px 40px;
+
+.nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #4ade80; /* teal hover for links */
+}
+
+.nav-connect {
+  padding: 15px 35px;
   border: 2px solid white;
-  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06%);
+  background: linear-gradient(135deg, #4ade80 0%, #60a5fa 100%); /* teal → blue gradient */
   border-radius: 50px;
-  font-size: 22px;
+  font-size: 18px;
   cursor: pointer;
   transition: 0.5s;
+  color: #fff;
 }
-.nav-connect:hover{
-    transform: scale(1.05);
-    background: linear-gradient(267deg, #B923E1 0.36%, #DA7C25 102.06%);
-    transition: all 0.3s ease-in-out;
+
+.nav-connect:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #60a5fa 0%, #4ade80 100%); /* inverted gradient on hover */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
