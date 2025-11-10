@@ -28,9 +28,9 @@ const About = () => {
               functionally robust.
             </p>
             <p>
-              I’m currently pursuing an <b>Advanced Diploma in Application Development</b> after completing my IT Diploma.
-              I love turning ideas into functional applications and continuously improving my skills in programming,
-              problem-solving, and innovation.
+            I have completed my Advanced Diploma in Application Development 
+            after earning my IT Diploma. I love turning ideas into functional applications and 
+            continuously improving my skills in programming, problem-solving, and innovation.
             </p>
           </div>
 

@@ -1,0 +1,132 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 20px;
+  background-color: #0a0a0a;
+  color: #fff;
+  gap: 60px;
+}
+
+/* Title Section */
+.portfolio-title {
+  position: relative;
+  text-align: center;
+}
+
+.portfolio-title h1 {
+  font-size: clamp(36px, 6vw, 80px);
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio-title h1 span {
+  background: linear-gradient(267deg, #DF8908 0%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.portfolio-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  max-width: 150px;
+  opacity: 0.2;
+}
+
+/* Portfolio Cards Layout */
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Card Design */
+.portfolio-card {
+  background-color: #111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(180, 21, 255, 0.3);
+  border: 1px solid #b415ff;
+}
+
+/* Image */
+.portfolio-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card Content */
+.portfolio-content {
+  padding: 25px;
+  text-align: left;
+}
+
+.portfolio-project-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  background: linear-gradient(267deg, #DF8908 0%, #B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px;
+}
+
+.portfolio-description {
+  font-size: 1rem;
+  color: #d1d5db;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.portfolio-tech {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.portfolio-btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 50px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.portfolio-btn:hover {
+  border-color: #b415ff;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 60px 15px;
+    gap: 40px;
+  }
+
+  .portfolio-container {
+    gap: 25px;
+  }
+
+  .portfolio-card {
+    border-radius: 15px;
+  }
+}
