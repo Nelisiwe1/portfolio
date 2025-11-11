@@ -24,7 +24,7 @@ const Portfolio = () => {
       tech: "C#, .NET",
       image: calcu,
       link: "#",
-      github: "https://github.com/yourusername/calculator-app",
+      github: "https://github.com/Nelisiwe1/SimpleCalculatorApp.git",
     },
     {
       title: "VR Education Experience",

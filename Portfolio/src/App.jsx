@@ -11,14 +11,31 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <About />
-      <Service/>
-      <Portfolio/>
-      <Contact/>
-      <Footer/>
+
+      <section id="home">
+        <Hero />
+      </section>
+
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="service">
+        <Service />
+      </section>
+
+      <section id="portfolio">
+        <Portfolio />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+
+      <Footer />
     </div>
-  )
-}
+  );
+};
+
 
 export default App

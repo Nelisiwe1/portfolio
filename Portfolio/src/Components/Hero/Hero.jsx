@@ -17,7 +17,8 @@ const Hero = () => {
       </p>
 
       <div className="hero-action">
-        <div className="hero-connect">Let’s Connect</div>
+        <a href="#contact" className="hero-connect">Let's connect</a>
+
         <div className="hero-resume">My Resume</div>
       </div>
     </div>
